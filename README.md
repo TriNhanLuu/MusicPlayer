@@ -1,5 +1,5 @@
 # **Simple Music Player using Javascript**
-I have just made a simple music player using Javascript. By using basic knowledge about this languge, this is one of my first project to practice and improve my front-end developement skill.
+I have just made a simple music player using Javascript. By using basic knowledge, this is one of my first Javascript project to practice and improve my front-end developement skill.
 
 ---
 
