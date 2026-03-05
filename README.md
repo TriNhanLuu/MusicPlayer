@@ -16,6 +16,7 @@ This music player contains these following feature:
 - [9] **Scroll active song**: This function forces the current song in the playlist to appear in the user viewport by scrolling the window.
 - [10] **Play song when click**: User can choose the song they want not just by control buttons but also by clicking directly on the playlist.
 - [11] **Config**: To save the users' latest settings.
+- [12] **Favorite songs**: I have just done the UI by now. I will try to upgrade UX and save it on localStorage to improve UX, too.
 
 ## ⚙️ Tech Stack
 - **HTML5**
