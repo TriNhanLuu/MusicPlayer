@@ -132,6 +132,14 @@ header {
   margin-right: 4px;
 }
 
+.song .options .fa-solid.fa-heart {
+  color: var(--primary-color);
+}
+
+.song.active .options .fa-solid.fa-heart {
+  color: #fff;
+}
+
 .song .thumb-container {
   width: 16%;
 }

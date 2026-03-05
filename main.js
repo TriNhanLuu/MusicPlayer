@@ -257,8 +257,6 @@ const app = {
       _this.isRandom = !_this.isRandom;
       _this.setConfig('isRandom', _this.isRandom);
       randomBtn.classList.toggle('active', _this.isRandom);
-
-      _this.playRandomsong()
     }
 
     // ----- Repeat song -----
@@ -277,10 +275,22 @@ const app = {
       }
     }
 
-    // ----- CLick new song -----
+    // ----- CLick new song / Heart songs -----
     playlist.onclick = function(e) {
-      const songNode = e.target.closest(".song:not(.active)");
+
+      // Heart songs
       const heartNode = e.target.closest(".fa-heart");
+      if(heartNode){
+        e.stopPropagation();
+
+        heartNode.classList.toggle('fa-solid');
+        heartNode.classList.toggle('fa-regular');
+
+        return; 
+      }
+
+      // Change song
+      const songNode = e.target.closest(".song:not(.active)");
       
       if(songNode) {
         _this.currentIndex = Number(songNode.dataset.index); // ! NOTICE THIS
